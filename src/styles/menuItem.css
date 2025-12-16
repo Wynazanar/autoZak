@@ -1,0 +1,30 @@
+.menu-item {
+    background: var(--menu-item-background);
+    color: var(--menu-item-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    padding: 8px 16px;
+    border: 3px solid var(--menu-item-border);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-item i {
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.menu-item:hover {
+    color: var(--menu-item-color-hover);
+    border: 3px solid var(--menu-item-border-hover);
+}
+
+.menu-item.select {
+    background: var(--menu-item-background-select);
+    border-radius: 6px;
+    color: #fff;
+}
+
+

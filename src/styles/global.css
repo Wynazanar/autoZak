@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-family: "Inter", sans-serif;
+    --text-color: #3F3F3F;
+
+    --menu-item-color: #3F3F3F;
+    --menu-item-color-hover: #3918D9;
+    
+    
+    --menu-item-background: #fff;
+    --menu-item-background-select: #4C34C2;
+
+    --menu-item-border: #fff;
+    --menu-item-border-hover: #AC9FF0;
+
+
+    --sidebar-color: #ffffff;
+    --body-color: #FAFBFF;
+
+    --primary-border: #B6ABED;
+    --primary-focus: #AC9FF0;
+    --primary-hover: #3918D9;
+    --primary-main: #4C34C2;
+    --primary-pressed: #230F80;
+    --primary-secondary: #F7F5FF;
+
+    --gray-100: #ECECEC;
+    --gray-200: #D8D8D8;
+    --gray-300: #C5C5C5;
+    --gray-400: #B1B1B1;
+    --gray-500: #9E9E9E;
+    --gray-600: #7E7E7E;
+    --gray-700: #5F5F5F;
+    --gray-800: #3F3F3F;
+    --gray-900: #202020;
+    
+    --gray_2-10: #0A0A0A;
+    --gray_2-20: #424242;
+    --gray_2-30: #616161;
+    --gray_2-40: #757575;
+    --gray_2-50: #9E9E9E;
+    --gray_2-60: #C2C2C2;
+    --gray_2-70: #E0E0E0;
+    --gray_2-80: #EDEDED;
+    --gray_2-90: #F5F5F5;
+    --gray_2-100: #FFFFFF;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--body-color);
+
+    display: flex;
+    column-gap: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+section {
+    margin: 20px;
+}
+
+.inter_14_m {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inter_16_m {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h3 {
+    font-style: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 20px;
+}
+
+.toggle-switch .switch {
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 20px;
+    border-radius: 25px;
+    background: var(--gray-200);
+    border: 2px solid transparent;
+}
+
+.toggle-switch .switch:hover {
+    border: 2px solid var(--primary-focus);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-switch.true .switch {
+    background: var(--primary-main);
+}
+
+.toggle-switch.true .switch::before {
+    left: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+table thead {
+    border-bottom: 1px solid var(--gray-200);
+    background: var(--gray_2-90);
+}
+
+table tbody {
+    background: var(--gray_2-100);
+}
+
+table th, td {
+    padding: 14px 16px;
+    color: var(--gray-800);
+}
