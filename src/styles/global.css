@@ -45,6 +45,13 @@
     --gray_2-80: #EDEDED;
     --gray_2-90: #F5F5F5;
     --gray_2-100: #FFFFFF;
+
+    --success-border: #B6CAAE;
+    --success-focus: #B6CAAE;
+    --success-hover: #1F4F09;
+    --success-main: #255F0B;
+    --success-pressed: #122F05;
+    --success-secondary: #D3DFCE;
 }
 
 body.dark {
@@ -197,4 +204,77 @@ table th, td {
     padding: 14px 16px;
     color: var(--gray-800);
 
+}
+
+
+
+
+
+
+.tag {
+    border: 1px solid var(--gray_2-60);
+    border-radius: 50px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tag.success {
+    background: var(--success-border);
+    color: var(--success-main);
+    border: 1px solid var(--success-border);
+}
+
+
+
+
+
+.button {
+    background: var(--primary-main);
+    color: var(--gray_2-100);
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background: var(--primary-hover);
+}
+
+.button.w {
+    background: transparent;
+    border: 2px solid transparent;
+    color: var(--primary-main);
+}
+
+.button.w:hover {
+    border: 2px solid transparent;
+    color: var(--primary-hover);
+}
+
+.button.w:focus {
+    border: 2px solid var(--primary-focus);
+}
+
+
+
+
+
+
+
+input {
+    color: var(--gray_2-30);
+    padding: 6px 12px;
+    border: 1px solid var(--gray_2-70);
+    border-radius: 4px;
+    margin: 5px;
+}
+
+input:hover {
+    border: 1px solid var(--primary-hover);
+}
+
+input:focus {
+    border: 1px solid var(--primary-focus);
 }

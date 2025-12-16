@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Система управления автовокзалом</title>
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'> -->
     <link rel="stylesheet" href="src/styles/reset.css">
     <link rel="stylesheet" href="src/styles/global.css">
 
     <link rel="stylesheet" href="src/styles/menuItem.css">
     <link rel="stylesheet" href="src/styles/sidebar.css">
+    <link rel="stylesheet" href="src/styles/modal.css">
 
     <script src="src/components/common/switch.js"></script>
+    <script src="src/components/common/tag.js"></script>
+    <script src="src/components/common/button.js"></script>
 </head>
 <body>
     <nav class="sidebar"></nav>
@@ -20,6 +23,47 @@
 
     <section>asdasd</section>
 
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>Создание нового рейса</p>
+                <p onclick="closeRouteModal()">x</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-block">
+                    <p>Информация об автобусе</p>
+                    <div class="modal-form">
+                        <input type="text" placeholder="Номер автобуса">
+                        <input type="number" step="1" placeholder="Количество мест">
+                        <input type="text" placeholder="Водитель">
+                    </div>
+                </div>
+                <div class="modal-form-block">
+                    <p>Информация о рейсе</p>
+                    <div class="modal-form">
+                        <input type="time" placeholder="Дата прибытия" id="pri">
+                        <input type="time" placeholder="Дата отправления" id="otp">
+                        <input type="text" placeholder="Место названия" id="place">
+                        <button class="button w" onclick="addNewDestinition()">Добавить</button>
+                    </div>
+                </div>
+                <div class="modal-form" style="overflow-x:auto;
+                max-height: 500px; padding: 8px;">
+                    <table style="width: 100%; margin-bottom: 25px; border-radius: 4px; text-align: center;">
+                        <thead>
+                            <tr>
+                                <th>Прибытие</th>
+                                <th>Отправление</th>
+                                <th>Место назначения</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+                <button class="button" onclick="saveDestination()">Сохранить</button>
+            </div>
+        </div>
+    </div>
 
     <script src="src/components/pages/HomePage.js"></script>
     <script src="src/components/pages/DestinationPage.js"></script>
