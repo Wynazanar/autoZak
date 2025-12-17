@@ -23,11 +23,11 @@
 
     <section>asdasd</section>
 
-    <div class="modal">
+    <div class="modal modal-hide">
         <div class="modal-content">
             <div class="modal-header">
                 <p>Создание нового рейса</p>
-                <p onclick="closeRouteModal()">x</p>
+                <i onclick="closeRouteModal()" class="bx bx-x-circle"></i>
             </div>
             <div class="modal-body">
                 <div class="modal-form-block">
@@ -43,7 +43,8 @@
                     <div class="modal-form">
                         <input type="time" placeholder="Дата прибытия" id="pri">
                         <input type="time" placeholder="Дата отправления" id="otp">
-                        <input type="text" placeholder="Место названия" id="place">
+                        <input type="text" placeholder="Место названия" id="place" list="datalist">
+                        <datalist id="datalist"></datalist>
                         <button class="button w" onclick="addNewDestinition()">Добавить</button>
                     </div>
                 </div>

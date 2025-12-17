@@ -16,6 +16,7 @@
     padding: 25px;
     width: 100%;
     background: var(--gray-100);
+    border-radius: 4px;
 }
 
 .modal-header {
@@ -26,6 +27,16 @@
     border-bottom: 1px solid var(--gray_2-60);
 }
 
+.modal-header p, i {
+    font-size: 20px;
+    font-weight:600;
+}
+
+.modal-header i {
+    color: rgb(175, 0, 0);
+    cursor: pointer;
+}
+
 .modal-body {
     display: flex;
     flex-direction: column;
@@ -33,4 +44,14 @@
 
 .modal-hide {
     visibility: collapse;
+}
+
+.modal-form-block {
+    margin-block: 10px;
+}
+
+.modal-form-block p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }

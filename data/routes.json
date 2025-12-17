@@ -2,6 +2,7 @@
     {
         "id": 1,
         "bus_id": 1,
+        "status": ["success", "Ожидает"],
         "routes": [
             {"time": ["12:40", "12:50"], "destination": "Новосибирск"},
             {"time": ["13:20", "13:25"], "destination": "Бердск"},
@@ -12,6 +13,7 @@
     {
         "id": 2,
         "bus_id": 2,
+        "status": ["", "Посадка"],
         "routes": [
             {"time": ["13:20", "13:25"], "destination": "Бердск"},
             {"time": ["15:40", "15:50"], "destination": "Искитим"},

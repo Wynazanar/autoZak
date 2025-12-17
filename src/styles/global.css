@@ -217,6 +217,7 @@ table th, td {
     padding: 2px 8px;
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
 }
 
 .tag.success {
