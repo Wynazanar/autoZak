@@ -232,7 +232,7 @@ table th, td {
 
 .button {
     background: var(--primary-main);
-    color: var(--gray_2-100);
+    color: white;
     font-weight: 600;
     border-radius: 4px;
     padding: 8px 16px;
@@ -278,4 +278,22 @@ input:hover {
 
 input:focus {
     border: 1px solid var(--primary-focus);
+}
+
+
+
+
+
+
+
+
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 15px;
+    margin-block: 15px;
+    margin-bottom: 20px;
+    background: var(--gray_2-100);
 }

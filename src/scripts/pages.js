@@ -7,4 +7,4 @@ function changePage(page) {
     }
 }
 
-changePage("map");
+changePage("tickets");

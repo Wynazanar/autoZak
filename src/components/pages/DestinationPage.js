@@ -23,10 +23,11 @@ async function setRoutesPage() {
                 <h3>Рейсы</h3>
                 ${Button("+ Добавить рейс", "createRouteModal()")}
             </div>
-            <table>
+            <table style="width: 100%">
                 <thead>
                     <tr>
                         <th>Автобус №</th>
+                        <th>Дата</th>
                         <th>Время отправления / прибытия</th>
                         <th>Направление</th>
                         <th>Водитель</th>
@@ -37,13 +38,19 @@ async function setRoutesPage() {
                 <tbody id="routeTable"></tbody>
             </table>
         `;
-        getTable(JSON.parse(localR), buses);
+        getTable(JSON.parse(localR), buses, "all");
+        
     } catch(error) {
         console.error('Ошибка:', error.message);
     }
 }
 
-function getTable(data, buses) {
+function getTable(data, buses, filters) {
+
+    if (filters != "all") {
+        
+    }
+
     let body = document.querySelector('#routeTable');
     let rows = '';
     for (let route of data) {
@@ -51,17 +58,17 @@ function getTable(data, buses) {
         rows += `
             <tr>
                 <td>${bus.bus_number}</td>
-                <td>${route.routes[0].time[0]} - ${route.routes[route.routes.length - 1].time[1]}</td>
+                <td>${route.date}</td>
+                <td style="text-align: center;">${route.routes[0].time[0]} - ${route.routes[route.routes.length - 1].time[1]}</td>
                 <td>${route.routes[0].destination} - ${route.routes[route.routes.length - 1].destination}</td>
                 <td>${bus.driver}</td>
-                <td>${bus.sits}</td>
+                <td style="text-align: center;">${bus.sits}</td>
                 <td>${Tag(route.status[0], route.status[1])}</td>
             </tr>
         `;
     }
     body.innerHTML += rows;
 }
-
 
 function createRouteModal() {
     let modal = document.querySelector(".modal");

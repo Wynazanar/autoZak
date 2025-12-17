@@ -15,27 +15,26 @@
     <script src="src/components/common/switch.js"></script>
     <script src="src/components/common/tag.js"></script>
     <script src="src/components/common/button.js"></script>
+
 </head>
 <body>
     <nav class="sidebar"></nav>
     <script src="src/components/menu/menuItem.js"></script>
     <script src="src/components/sidebar/sidebar.js"></script>
-
+    
     <section>asdasd</section>
-
+    
     <div class="modal modal-hide">
         <div class="modal-content">
             <div class="modal-header">
                 <p>Создание нового рейса</p>
-                <i onclick="closeRouteModal()" class="bx bx-x-circle"></i>
+                <i onclick="closeRouteModal()" class="bx bx-x-circle">х</i>
             </div>
             <div class="modal-body">
                 <div class="modal-form-block">
                     <p>Информация об автобусе</p>
                     <div class="modal-form">
                         <input type="text" placeholder="Номер автобуса">
-                        <input type="number" step="1" placeholder="Количество мест">
-                        <input type="text" placeholder="Водитель">
                     </div>
                 </div>
                 <div class="modal-form-block">
@@ -49,7 +48,7 @@
                     </div>
                 </div>
                 <div class="modal-form" style="overflow-x:auto;
-                max-height: 500px; padding: 8px;">
+                max-height: 500px; padding: 8px; height: 500px;">
                     <table style="width: 100%; margin-bottom: 25px; border-radius: 4px; text-align: center;">
                         <thead>
                             <tr>
@@ -65,9 +64,11 @@
             </div>
         </div>
     </div>
-
+    
     <script src="src/components/pages/HomePage.js"></script>
     <script src="src/components/pages/DestinationPage.js"></script>
+    <script src="src/components/pages/TicketsPage.js"></script>
     <script src="src/scripts/pages.js"></script>
+    <script src="src/scripts/theme.js"></script>
 </body>
 </html>
