@@ -1,7 +1,7 @@
 function menuItem(icon, title) {
     return (`
         <a class="menu-item" onclick="select(this)">
-            <div style="display: flex;">
+            <div style="display: flex; align-items: center;">
                 ${icon}
                 <p class="inter_16_m">${title}</p>
             </div>

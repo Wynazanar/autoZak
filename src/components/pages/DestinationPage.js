@@ -8,7 +8,7 @@ async function setRoutesPage() {
         }
         
         const routes = await response_routes.json();
-        const buses = await response_buses.json(); 
+        const buses = await response_buses.json();
         
         const localR = localStorage.getItem("routes");
         

@@ -52,6 +52,20 @@
     --success-main: #255F0B;
     --success-pressed: #122F05;
     --success-secondary: #D3DFCE;
+    
+    --danger-border: #E2B6B6;
+    --danger-focus: #E2B6B6;
+    --danger-hover: #8C1E1E;
+    --danger-main: #A92525;
+    --danger-pressed: #541212;
+    --danger-secondary: #EED3D3;
+    
+    --warning-border: #EBDCB3;
+    --warning-focus: #EBDCB3;
+    --warning-hover: #A37C16;
+    --warning-main: #C4951B;
+    --warning-pressed: #624A0D;
+    --warning-secondary: #F3EAD1;
 }
 
 body.dark {
@@ -189,6 +203,7 @@ h3 {
 
 table {
     border-collapse: collapse;
+    border-radius: 4px;
 }
 
 table thead {
@@ -297,3 +312,49 @@ input:focus {
     margin-bottom: 20px;
     background: var(--gray_2-100);
 }
+
+
+
+.push {
+    position: fixed;
+    top: 15px;
+    right: -470px;
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 470px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 100;
+}
+
+.push.show {
+    right: 15px;
+    opacity: 1;
+}
+
+.push.hide {
+    right: -470px;
+    opacity: 0;
+}
+
+.push.danger {
+    background: var(--danger-secondary);
+    border: 2px solid var(--danger-border);
+    color: var(--danger-main);
+}
+
+.push.success {
+    background: var(--success-secondary);
+    border: 2px solid var(--success-border);
+    color: var(--success-main);
+} 
+
+.push.warning {
+    background: var(--warning-secondary);
+    border: 2px solid var(--warning-border);
+    color: var(--warning-main);
+} 

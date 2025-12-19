@@ -27,12 +27,12 @@
     border-bottom: 1px solid var(--gray_2-60);
 }
 
-.modal-header p, i {
+.modal-header p, svg {
     font-size: 20px;
     font-weight:600;
 }
 
-.modal-header i {
+.modal-header svg {
     color: rgb(175, 0, 0);
     cursor: pointer;
 }
