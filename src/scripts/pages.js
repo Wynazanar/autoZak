@@ -4,7 +4,7 @@ function changePage(page) {
         case "Билеты": setTcketsPage(); break;
         case "Рейсы": setRoutesPage(); break;
         case "Автобусы": setBusesPage(); break;
-        case "Аналитика": setRoutesPage(); break;
+        case "Аналитика": setAnalyticsPage(); break;
         case "Журнал действий": setAuditLogPage(); break;
         default: setHomePage();
     }
@@ -49,5 +49,5 @@ function setLocalStorage() {
     
 }
 
-changePage("Журнал действий");
+changePage("Главная");
 setLocalStorage();

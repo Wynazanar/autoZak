@@ -9,7 +9,7 @@ function setBusesPage() {
         </div>
         <div id="buses_filters" style="margin-block: 20px; display: flex; gap: 10px; background: var(--gray_2-100); border-radius: 4px; padding: 15px">
             <input type="text" placeholder="Номер автобуса" id="busNumberFilter"/>
-            <input type="text" placeholder="Имя водителя" id="driverNameFilter"/>
+            <input type="text" placeholder="Bодитель" id="driverNameFilter"/>
             <button class="button w" onclick="applyFilters()">Применить фильтр</button>
         </div>
         <table style="width: 100%; margin-top: 25px;">
@@ -25,6 +25,7 @@ function setBusesPage() {
             <tbody id="buses_table"></tbody>
         </table>
     </div>
+    
     <div class="modal modal-hide" id="bus_create_modal">
         <div class="modal-content">
             <div class="modal-header">

@@ -241,6 +241,12 @@ table th, td {
     border: 1px solid var(--success-border);
 }
 
+.tag.failed {
+    background: var(--danger-border);
+    color: var(--danger-main);
+    border: 1px solid var(--danger-border);
+}
+
 
 
 
@@ -358,3 +364,83 @@ input:focus {
     border: 2px solid var(--warning-border);
     color: var(--warning-main);
 } 
+
+
+
+
+
+
+
+
+
+select {
+    background: var(--gray_2-100);
+    color: var(--gray-600);
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 1px solid var(--gray_2-70);
+    appearance: base-select;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 256px;
+    height: 34px;
+}
+
+select:hover {
+    border: 1px solid var(--primary-hover);
+}
+
+select:focus {
+    border: 1px solid var(--primary-focus);
+}
+
+select::picker-icon {
+    padding-right: 12px;
+}
+
+
+
+
+.filters {
+    margin-block: 20px;
+    display: grid;
+    background: var(--gray_2-100);
+    border-radius: 4px;
+    padding: 15px;
+    align-items: center;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.seat-btn {
+    padding: 8px 12px;
+    border: 1px solid var(--gray_2-70);
+    border-radius: 4px;
+    background: var(--gray_2-100);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.seat-btn:hover:not(:disabled) {
+    border: 1px solid var(--primary-hover);
+    background: var(--primary-secondary);
+}
+
+.seat-btn.selected {
+    background: var(--primary-main);
+    color: white;
+    border: 1px solid var(--primary-main);
+}
+
+.seat-btn.occupied {
+    background: var(--gray_2-70);
+    color: var(--gray_2-50);
+    cursor: not-allowed;
+    opacity: 0.6;
+}

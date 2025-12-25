@@ -33,7 +33,7 @@ const items = [
 function Sidebar() {
     sidebar = document.querySelector(".sidebar");
     sidebar.innerHTML += getHeader();
-    sidebar.innerHTML += getFooter();
+    // sidebar.innerHTML += getFooter();
 }
 
 function getHeader() {

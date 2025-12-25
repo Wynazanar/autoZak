@@ -23,53 +23,13 @@
     <script src="src/components/menu/menuItem.js"></script>
     <script src="src/components/sidebar/sidebar.js"></script>
     
-    <section style="width: 80%;">asdasd</section>
-    
-    <div class="modal modal-hide">
-        <div class="modal-content">
-            <div class="modal-header">
-                <p>Создание нового рейса</p>
-                <i onclick="closeRouteModal()" class="bx bx-x-circle">х</i>
-            </div>
-            <div class="modal-body">
-                <div class="modal-form-block">
-                    <p>Информация об автобусе</p>
-                    <div class="modal-form">
-                        <input type="text" placeholder="Номер автобуса">
-                    </div>
-                </div>
-                <div class="modal-form-block">
-                    <p>Информация о рейсе</p>
-                    <div class="modal-form">
-                        <input type="time" placeholder="Дата прибытия" id="pri">
-                        <input type="time" placeholder="Дата отправления" id="otp">
-                        <input type="text" placeholder="Место названия" id="place" list="datalist">
-                        <datalist id="datalist"></datalist>
-                        <button class="button w" onclick="addNewDestinition()">Добавить</button>
-                    </div>
-                </div>
-                <div class="modal-form" style="overflow-x:auto;
-                max-height: 500px; padding: 8px; height: 500px;">
-                    <table style="width: 100%; margin-bottom: 25px; border-radius: 4px; text-align: center;">
-                        <thead>
-                            <tr>
-                                <th>Прибытие</th>
-                                <th>Отправление</th>
-                                <th>Место назначения</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody"></tbody>
-                    </table>
-                </div>
-                <button class="button" onclick="saveDestination()">Сохранить</button>
-            </div>
-        </div>
-    </div>
+    <section style="width: 80%;"></section>
     
     <script src="src/components/pages/HomePage.js"></script>
     <script src="src/components/pages/DestinationPage.js"></script>
     <script src="src/components/pages/TicketsPage.js"></script>
     <script src="src/components/pages/BusesPage.js"></script>
+    <script src="src/components/pages/AnalyticsPage.js"></script>
     <script src="src/components/pages/AugitLog.js"></script>
     <script src="src/scripts/pages.js"></script>
     <script src="src/scripts/audit.js"></script>
