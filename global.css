@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-family: "Inter", sans-serif;
+
+    --primary-100: #E1E2FF;
+    --primary-200: #C3C4FF;
+    --primary-300: #A5A7FF;
+    --primary-400: #8789FF;
+    --primary-500: #696CFF;
+    --primary-600: #5E61E6;
+    --primary-700: #595CD9;
+    --primary-800: #5456CC;
+    --primary-900: #564DB4;
+
+    --secondary-100: #E7E9ED;
+    --secondary-200: #CED3DA;
+    --secondary-300: #B6BEC8;
+    --secondary-400: #9DA8B5;
+    --secondary-500: #8592A3;
+    --secondary-600: #788393;
+    --secondary-700: #717C8B;
+    --secondary-800: #6A7582;
+    --secondary-900: #646D7A;
+
+    --info-100: #CDF3FB;
+    --info-200: #9AE7F7;
+    --info-300: #68DBF4;
+    --info-400: #35CFF0;
+    --info-500: #03C3EC;
+    --info-600: #03AFD4;
+    --info-700: #03A6C9;
+    --info-800: #029CBD;
+    --info-900: #0292B1;
+
+    --success-100: #E3F8D7;
+    --success-200: #C6F1AF;
+    --success-300: #AAEB87;
+    --success-400: #8DE45F;
+    --success-500: #71DD37;
+    --success-600: #66C732;
+    --success-700: #60BC2F;
+    --success-800: #5AB12C;
+    --success-900: #55A629;
+
+    --warning-100: #FFEECC;
+    --warning-200: #FFDD99;
+    --warning-300: #FFCD66;
+    --warning-400: #FFBC33;
+    --warning-500: #FFAB00;
+    --warning-600: #E69A00;
+    --warning-700: #D99100;
+    --warning-800: #CC8900;
+    --warning-900: #BF7732;
+
+    --error-100: #FFD8D2;
+    --error-200: #FFB2A5;
+    --error-300: #FF8B77;
+    --error-400: #FF654A;
+    --error-500: #FF3E1D;
+    --error-600: #E6381A;
+    --error-700: #D93519;
+    --error-800: #CC3217;
+    --error-900: #BF2F16;
+
+    --action-focus: #E9EAEC;
+    --action-200: #D3D6D8;
+    --action-disabled: #BDC1C5;
+    --text-disabled: #A7ACB2;
+    --action-500: #91979F;
+    --action-active: #7A838B;
+    --text-secondary: #646E78;
+    --action-800: #4E5965;
+    --text-primary: #384551;
+
+    --snackbar: #22303E;
+    --body-bg: #f5f5f9;
+    --paper-bg: #FFFFFF;
+    --table-header: #FFFFFF;
+    --chat-bg: #F7F8F8;
+    --track-bg: #EEF1F3;
+    --grey-light: #FAFAFA;
+
+    --primary-o-lighter: rgba(105, 108, 255, 0.08);
+    --primary-o-light: rgba(105, 108, 255, 0.16);
+    --primary-o-main: rgba(105, 108, 255, 0.24);
+    --primary-o-dark: rgba(105, 108, 255, 0.32);
+    --primary-o-darker: rgba(105, 108, 255, 0.38);
+
+    --secondary-o-lighter: rgba(133, 146, 163, 0.08);
+    --secondary-o-lighter: rgba(133, 146, 163, 0.16);
+    --secondary-o-lighter: rgba(133, 146, 163, 0.24);
+    --secondary-o-lighter: rgba(133, 146, 163, 0.32);
+    --secondary-o-lighter: rgba(133, 146, 163, 0.38);
+
+    --info-o-lighter: rgba(3, 195, 236, 0.08);
+    --info-o-lighter: rgba(3, 195, 236, 0.16);
+    --info-o-lighter: rgba(3, 195, 236, 0.24);
+    --info-o-lighter: rgba(3, 195, 236, 0.32);
+    --info-o-lighter: rgba(3, 195, 236, 0.38);
+
+    --shadow-small: 0px 2px 4px;
+    --shadow-medium: 0px 4px 16px;
+    --shadow-large: 0px 10px 20px;
+
+}
+
+* {
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+.button {
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+/* PRIMARY BUTTON */
+.button.primary {
+    box-shadow: var(--shadow-small) var(--primary-300);
+    background: var(--primary-500);
+    color: var(--paper-bg);
+}
+
+.button.primary:hover {
+    transform: translateY(-1px);
+    background: var(--primary-700);
+}
+
+.button.primary:focus {
+    background: var(--primary-700);
+}
+
+.button.primary:disabled {
+    transform: translateY(0px);
+    background: var(--primary-500);
+    color: var(--paper-bg);
+    opacity: 0.45;
+    cursor: default;
+}
+
+.button.primary.outline {
+    box-shadow: none;
+    background: transparent;
+    color: var(--primary-500);
+    border: 1px solid var(--primary-500);
+}
+
+.button.primary.outline:hover {
+    color: var(--paper-bg);
+    background: var(--primary-700);
+    transform: translateY(-1px);
+}
+
+.button.primary.outline:focus {
+    color: var(--paper-bg);
+    background: var(--primary-700);
+}
+
+.button.primary.outline:disabled {
+    transform: translateY(0px);
+    background: transparent;
+    color: var(--primary-500);
+    opacity: 0.45;
+    cursor: default;
+}
+
+/* SECONDARY BUTTON */
+.button.secondary {
+    box-shadow: var(--shadow-small) var(--secondary-300);
+    background: var(--secondary-500);
+    color: var(--paper-bg);
+}
+
+.button.secondary:hover {
+    transform: translateY(-1px);
+    background: var(--secondary-700);
+}
+
+.button.secondary:focus {
+    background: var(--secondary-700);
+}
+
+.button.secondary:disabled {
+    transform: translateY(0px);
+    background: var(--secondary-500);
+    color: var(--paper-bg);
+    opacity: 0.45;
+    cursor: default;
+}
+
+.button.secondary.outline {
+    box-shadow: none;
+    background: transparent;
+    color: var(--secondary-500);
+    border: 1px solid var(--secondary-500);
+}
+
+.button.secondary.outline:hover {
+    color: var(--paper-bg);
+    background: var(--secondary-700);
+    transform: translateY(-1px);
+}
+
+.button.secondary.outline:focus {
+    color: var(--paper-bg);
+    background: var(--secondary-700);
+}
+
+.button.secondary.outline:disabled {
+    transform: translateY(0px);
+    background: transparent;
+    color: var(--secondary-500);
+    opacity: 0.45;
+    cursor: default;
+}
+
+/* ERROR BUTTON */
+.button.error {
+    box-shadow: var(--shadow-small) var(--error-300);
+    background: var(--error-500);
+    color: var(--paper-bg);
+}
+
+.button.error:hover {
+    transform: translateY(-1px);
+    background: var(--error-700);
+}
+
+.button.error:focus {
+    background: var(--error-700);
+}
+
+.button.error:disabled {
+    transform: translateY(0px);
+    background: var(--error-500);
+    color: var(--paper-bg);
+    opacity: 0.45;
+    cursor: default;
+}
+
+.button.error.outline {
+    box-shadow: none;
+    background: transparent;
+    color: var(--error-500);
+    border: 1px solid var(--error-500);
+}
+
+.button.error.outline:hover {
+    color: var(--paper-bg);
+    background: var(--error-700);
+    transform: translateY(-1px);
+}
+
+.button.error.outline:focus {
+    color: var(--paper-bg);
+    background: var(--error-700);
+}
+
+.button.error.outline:disabled {
+    transform: translateY(0px);
+    background: transparent;
+    color: var(--error-500);
+    opacity: 0.45;
+    cursor: default;
+}
+
+/* WARNING BUTTON */
+.button.warning {
+    box-shadow: var(--shadow-small) var(--warning-300);
+    background: var(--warning-500);
+    color: var(--paper-bg);
+}
+
+.button.warning:hover {
+    transform: translateY(-1px);
+    background: var(--warning-700);
+}
+
+.button.warning:focus {
+    background: var(--warning-700);
+}
+
+.button.warning:disabled {
+    transform: translateY(0px);
+    background: var(--warning-500);
+    color: var(--paper-bg);
+    opacity: 0.45;
+    cursor: default;
+}
+
+.button.warning.outline {
+    box-shadow: none;
+    background: transparent;
+    color: var(--warning-500);
+    border: 1px solid var(--warning-500);
+}
+
+.button.warning.outline:hover {
+    color: var(--paper-bg);
+    background: var(--warning-700);
+    transform: translateY(-1px);
+}
+
+.button.warning.outline:focus {
+    color: var(--paper-bg);
+    background: var(--warning-700);
+}
+
+.button.warning.outline:disabled {
+    transform: translateY(0px);
+    background: transparent;
+    color: var(--warning-500);
+    opacity: 0.45;
+    cursor: default;
+}
+
+/* SUCCESS BUTTON */
+.button.success {
+    box-shadow: var(--shadow-small) var(--success-300);
+    background: var(--success-500);
+    color: var(--paper-bg);
+}
+
+.button.success:hover {
+    transform: translateY(-1px);
+    background: var(--success-700);
+}
+
+.button.success:focus {
+    background: var(--success-700);
+}
+
+.button.success:disabled {
+    transform: translateY(0px);
+    background: var(--success-500);
+    color: var(--paper-bg);
+    opacity: 0.45;
+    cursor: default;
+}
+
+.button.success.outline {
+    box-shadow: none;
+    background: transparent;
+    color: var(--success-500);
+    border: 1px solid var(--success-500);
+}
+
+.button.success.outline:hover {
+    color: var(--paper-bg);
+    background: var(--success-700);
+    transform: translateY(-1px);
+}
+
+.button.success.outline:focus {
+    color: var(--paper-bg);
+    background: var(--success-700);
+}
+
+.button.success.outline:disabled {
+    transform: translateY(0px);
+    background: transparent;
+    color: var(--success-500);
+    opacity: 0.45;
+    cursor: default;
+}
